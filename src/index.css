@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply bg-gray-100 bg-opacity-50 backdrop-blur-lg h-40 rounded-lg drop-shadow-lg flex items-center justify-center
+}
+
+.card:hover {
+    transform: scale(1.1);
+
+}
+
+.card {
+    transition: transform .7s ease;
+}
+
+.menu-card {
+    @apply p-8 border-b w-full relative
+}
+
+.menu-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 50%, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+    background-size: 200%;
+    background-position: 0, 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all ease;
+    transition-duration: .7s;
+}
+
+.menu-card:hover::before {
+    background-position: right;
+    transition: all ease;
+    transition-duration: 0.7s;
+
+}
