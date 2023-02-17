@@ -38,10 +38,10 @@ function Hero() {
         text-white bg shadow-lg hover:shadow-slate-600 
           rounded-md shadow-slate-500"
           >
-            Our Prices
+            Contact us
           </button>
           <button className="px-10 py-1 shadow-lg hover:shadow-xl transition-shadow">
-            Contact us
+            Our prices
           </button>
         </div>
       </div>
